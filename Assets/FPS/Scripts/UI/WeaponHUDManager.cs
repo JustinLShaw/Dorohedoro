@@ -19,7 +19,7 @@ public class WeaponHUDManager : MonoBehaviour
         WeaponController activeWeapon = m_PlayerWeaponsManager.GetActiveWeapon();
         if (activeWeapon)
         {
-            AddWeapon(activeWeapon, m_PlayerWeaponsManager.activeWeaponIndex);
+            // AddWeapon(activeWeapon, m_PlayerWeaponsManager.activeWeaponIndex);
             ChangeWeapon(activeWeapon);
         }
 
