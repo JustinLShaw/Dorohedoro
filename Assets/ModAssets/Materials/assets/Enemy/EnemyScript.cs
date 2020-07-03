@@ -11,6 +11,7 @@ public class EnemyScript : MonoBehaviour
     public Sprite image1 = null;
     public Sprite image2 = null;
     public GameObject target = null;
+    public GameObject mushroom_death = null;
 
     SpriteRenderer sr = null;
     float last_time = 0;
@@ -51,9 +52,14 @@ public class EnemyScript : MonoBehaviour
             if(Vector3.Distance(this.transform.position, target.transform.position) < damage_distance)
             {
                 //spawn mushrooms
+                Instantiate(mushroom_death, this.transform);
+
+                this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY| RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
 
                 //kill this
-                Destroy(this);
+                Destroy(sr);
+                Destroy(this.GetComponent<BoxCollider>());
+                Destroy(this, 5.0f);
             }
         }
     }
