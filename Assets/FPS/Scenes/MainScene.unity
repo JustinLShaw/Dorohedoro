@@ -1434,6 +1434,12 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2729281214152228921}
+    - target: {fileID: 5146640772727789686, guid: 3caeefc22d5f9804083c7710fc127ba6,
+        type: 3}
+      propertyPath: mushroom_death
+      value: 
+      objectReference: {fileID: 3452922575449100341, guid: 2decdeb50ae6c5641a7e925bceff3974,
+        type: 3}
     - target: {fileID: 5146640772727789687, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5313,7 +5319,7 @@ PrefabInstance:
     - target: {fileID: 3452922575449100328, guid: 2decdeb50ae6c5641a7e925bceff3974,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8683066
+      value: -24.09
       objectReference: {fileID: 0}
     - target: {fileID: 3452922575449100328, guid: 2decdeb50ae6c5641a7e925bceff3974,
         type: 3}
@@ -5369,6 +5375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlueMushroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452922575449100342, guid: 2decdeb50ae6c5641a7e925bceff3974,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2decdeb50ae6c5641a7e925bceff3974, type: 3}
@@ -5799,6 +5810,12 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2729281214152228921}
+    - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
+        type: 3}
+      propertyPath: mushroom_death
+      value: 
+      objectReference: {fileID: 3452922575449100341, guid: 2decdeb50ae6c5641a7e925bceff3974,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f, type: 3}
 --- !u!1001 &7874858299925840354
@@ -5818,6 +5835,12 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2729281214152228921}
+    - target: {fileID: 3036999983946680318, guid: 5454e5020220b53438bab8e1997ee8d5,
+        type: 3}
+      propertyPath: mushroom_death
+      value: 
+      objectReference: {fileID: 3452922575449100341, guid: 2decdeb50ae6c5641a7e925bceff3974,
+        type: 3}
     - target: {fileID: 3036999983946680319, guid: 5454e5020220b53438bab8e1997ee8d5,
         type: 3}
       propertyPath: m_LocalPosition.x
