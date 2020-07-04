@@ -16,13 +16,14 @@ public class OpenDoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(Vector3.Distance(target.transform.position, this.transform.position));
         if (Vector3.Distance(target.transform.position, this.transform.position) < 5.0f)
         {
             open = true;
         }
         if(open)
         {
-            this.transform.position += Vector3.up * 0.01f;
+            this.transform.position += Vector3.up * 0.10f;
         }
     }
 }
