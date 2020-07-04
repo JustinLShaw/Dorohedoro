@@ -45,7 +45,7 @@ PrefabInstance:
     - target: {fileID: 5715249847897426507, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
       propertyPath: m_Name
-      value: GreenEnemy
+      value: GreenEnemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5715249847897426548, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
@@ -119,11 +119,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7869258890829222257, guid: 879cc76bc71994acf98f17ee6d83d1fc,
         type: 3}
+    - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
+        type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 5146640772727789641}
+    - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
+        type: 3}
+      propertyPath: mushroom_death
+      value: 
+      objectReference: {fileID: 4810070110211783996, guid: 3c4d6189aabd2b44abd607eaf3d989fc,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f, type: 3}
 --- !u!1 &5146640772727789640 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5715249847897426507, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 593401990930977283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &5146640772727789641 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5715249847897426506, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
     type: 3}
   m_PrefabInstance: {fileID: 593401990930977283}
   m_PrefabAsset: {fileID: 0}

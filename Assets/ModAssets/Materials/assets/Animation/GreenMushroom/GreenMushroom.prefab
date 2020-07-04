@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3452922575449100341
+--- !u!1 &4810070110211783996
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6611331097685075350}
-  - component: {fileID: 3452922575449100343}
-  - component: {fileID: 8567482834046283547}
-  - component: {fileID: 7231539279796580385}
+  - component: {fileID: 3957495380172900511}
+  - component: {fileID: 4810070110211783998}
+  - component: {fileID: 2003578126334050834}
+  - component: {fileID: 680154763571535144}
   m_Layer: 0
-  m_Name: BlueMushroom
+  m_Name: GreenMushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6611331097685075350
+--- !u!224 &3957495380172900511
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3452922575449100341}
+  m_GameObject: {fileID: 4810070110211783996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -38,17 +38,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &3452922575449100343
+--- !u!95 &4810070110211783998
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3452922575449100341}
+  m_GameObject: {fileID: 4810070110211783996}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f13d5d01afffa5c48b5b2c6f3cb9b52e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 61c6bdb199e10af49bc3545555c376ef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -57,21 +57,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!222 &8567482834046283547
+--- !u!222 &2003578126334050834
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3452922575449100341}
+  m_GameObject: {fileID: 4810070110211783996}
   m_CullTransparentMesh: 0
---- !u!114 &7231539279796580385
+--- !u!114 &680154763571535144
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3452922575449100341}
+  m_GameObject: {fileID: 4810070110211783996}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}

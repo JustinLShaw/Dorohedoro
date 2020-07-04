@@ -34,7 +34,7 @@ public class HudLogic : MonoBehaviour
             arm_rt.localPosition += offset;
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             //spawn smoke
             GameObject smoke_go = Instantiate(smoke);
@@ -53,13 +53,13 @@ public class HudLogic : MonoBehaviour
                     //spawn mushrooms
                     GameObject mushroom_death = Instantiate(e.mushroom_death);
                     mushroom_death.transform.parent = this.transform;
-                    mushroom_death.transform.localScale = new Vector3(100.0f, 100.0f, 1.0f);
+                    mushroom_death.transform.localScale = new Vector3(5.0f, 5.0f, 1.0f);
                     //e.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
 
                     //kill this
                     //Destroy(e.sr);
-                    Destroy(e.GetComponent<BoxCollider>());
-                    Destroy(e, 5.0f);
+                    //Destroy(e.GetComponent<BoxCollider>());
+                    Destroy(eo);
                 }
             }
         }

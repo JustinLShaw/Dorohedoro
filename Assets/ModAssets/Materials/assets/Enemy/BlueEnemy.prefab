@@ -39,6 +39,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1955034847427549832, guid: 5109800c2b007ff4281c7de845938904,
         type: 3}
+    - target: {fileID: 5146640772727789686, guid: 3caeefc22d5f9804083c7710fc127ba6,
+        type: 3}
+      propertyPath: mushroom_death
+      value: 
+      objectReference: {fileID: 3452922575449100341, guid: 2decdeb50ae6c5641a7e925bceff3974,
+        type: 3}
     - target: {fileID: 5146640772727789687, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
       propertyPath: m_LocalPosition.x

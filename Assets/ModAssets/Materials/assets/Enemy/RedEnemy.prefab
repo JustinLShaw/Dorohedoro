@@ -50,6 +50,9 @@ MonoBehaviour:
   image1: {fileID: 4107826327890550477, guid: d96594cb2fd0a4e99901535a9c4b750e, type: 3}
   image2: {fileID: 785199466935514170, guid: 5b6dd71b8c65b463a9be86e0c3c4729b, type: 3}
   target: {fileID: 0}
+  mushroom_death: {fileID: 6585536835944951914, guid: b45d28fde90018d47b74c3c8206f03ae,
+    type: 3}
+  sr: {fileID: 5715249847897426506}
 --- !u!212 &5715249847897426506
 SpriteRenderer:
   m_ObjectHideFlags: 0
