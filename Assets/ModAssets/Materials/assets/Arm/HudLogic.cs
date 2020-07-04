@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HudLogic : MonoBehaviour
 {
     public GameObject arm;
+    public Image enAvatar;
+    public Sprite screamEnAvatar;
+    public Sprite neutralEnAvatar;
+    public Sprite leftEnAvatar;
+    public Sprite rightEnAvatar;
+
     RectTransform arm_rt;
 
     public float arm_rotate_speed = 1.0f;
@@ -13,6 +20,8 @@ public class HudLogic : MonoBehaviour
     float arm_angle = 0.0f;
 
     public GameObject smoke = null;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +43,18 @@ public class HudLogic : MonoBehaviour
             arm_rt.localPosition += offset;
         }
 
+        if(Input.GetKey(KeyCode.A)){
+            enAvatar.sprite = leftEnAvatar;
+        } else if(Input.GetKey(KeyCode.D)){
+            enAvatar.sprite = rightEnAvatar;
+        } else if(!Input.GetMouseButton(0)){
+            enAvatar.sprite = neutralEnAvatar;
+        }
+
         if (Input.GetMouseButton(0))
         {
+            enAvatar.sprite = screamEnAvatar;
+
             //spawn smoke
             GameObject smoke_go = Instantiate(smoke);
             smoke_go.transform.parent = this.transform;
