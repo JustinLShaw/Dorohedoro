@@ -40,12 +40,6 @@ public class Pickup : MonoBehaviour
 
     private void Update()
     {
-        // Handle bobbing
-        float bobbingAnimationPhase = ((Mathf.Sin(Time.time * verticalBobFrequency) * 0.5f) + 0.5f) * bobbingAmount;
-        transform.position = m_StartPosition + Vector3.up * bobbingAnimationPhase;
-
-        // Handle rotating
-        transform.Rotate(Vector3.up, rotatingSpeed * Time.deltaTime, Space.Self);
     }
 
     private void OnTriggerEnter(Collider other)
