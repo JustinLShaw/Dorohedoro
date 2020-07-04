@@ -78,11 +78,8 @@ public class HudLogic : MonoBehaviour
                     GameObject mushroom_death = Instantiate(e.mushroom_death);
                     mushroom_death.transform.parent = this.transform;
                     mushroom_death.transform.localScale = new Vector3(5.0f, 5.0f, 1.0f);
-                    //e.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
 
-                    //kill this
-                    //Destroy(e.sr);
-                    //Destroy(e.GetComponent<BoxCollider>());
+                    //kill gameobject
                     Destroy(eo);
                 }
             }
