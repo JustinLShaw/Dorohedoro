@@ -7,11 +7,13 @@ public class EnemyScript : MonoBehaviour
 {
     public float move_speed = 2.0f;
     public float animation_diff = 0.5f;
-    public float damage_distance = 5f;
+    public float damage_distance = 1.5f;
     public Sprite image1 = null;
     public Sprite image2 = null;
     public GameObject target = null;
     public GameObject mushroom_death = null;
+    
+    Health m_PlayerHealth;
 
     public SpriteRenderer sr = null;
     float last_time = 0;
@@ -19,6 +21,11 @@ public class EnemyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerCharacterController playerCharacterController = GameObject.FindObjectOfType<PlayerCharacterController>();
+        DebugUtility.HandleErrorIfNullFindObject<PlayerCharacterController, PlayerHealthBar>(playerCharacterController, this);
+
+        m_PlayerHealth = playerCharacterController.GetComponent<Health>();
+
         target = GameObject.Find("Player");
         sr = this.GetComponent<SpriteRenderer>();
     }
@@ -26,6 +33,7 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float cur_time = Time.time;
         if(cur_time - last_time > animation_diff)
         {
@@ -47,6 +55,15 @@ public class EnemyScript : MonoBehaviour
 
         this.transform.LookAt(target.transform);
 
+        if(Vector3.Distance(this.transform.position, target.transform.position) < damage_distance) {
+            m_PlayerHealth.currentHealth -= 1;
+        }
+
+        if(m_PlayerHealth.currentHealth <= 0){
+            m_PlayerHealth.Kill();
+        }
+
+
         //check for damage
         /*
         if (Input.GetMouseButton(0))
@@ -66,4 +83,5 @@ public class EnemyScript : MonoBehaviour
         }
         */
     }
+
 }
