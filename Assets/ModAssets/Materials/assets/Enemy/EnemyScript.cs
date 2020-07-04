@@ -13,7 +13,7 @@ public class EnemyScript : MonoBehaviour
     public GameObject target = null;
     public GameObject mushroom_death = null;
 
-    SpriteRenderer sr = null;
+    public SpriteRenderer sr = null;
     float last_time = 0;
 
     // Start is called before the first frame update
@@ -47,7 +47,8 @@ public class EnemyScript : MonoBehaviour
         this.transform.LookAt(target.transform);
 
         //check for damage
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*
+        if (Input.GetMouseButton(0))
         {
             if(Vector3.Distance(this.transform.position, target.transform.position) < damage_distance)
             {
@@ -62,5 +63,6 @@ public class EnemyScript : MonoBehaviour
                 Destroy(this, 5.0f);
             }
         }
+        */
     }
 }
