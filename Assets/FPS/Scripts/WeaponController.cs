@@ -61,7 +61,7 @@ public class WeaponController : MonoBehaviour
 
     [Header("Ammo Parameters")]
     [Tooltip("Amount of ammo reloaded per second")]
-    public float ammoReloadRate = 1f;
+    float ammoReloadRate = 0f;
     [Tooltip("Delay after the last shot before starting to reload")]
     public float ammoReloadDelay = 2f;
     [Tooltip("Maximum amount of ammo in the gun")]
@@ -99,7 +99,7 @@ public class WeaponController : MonoBehaviour
 
     public UnityAction onShoot;
 
-    float m_CurrentAmmo;
+    public float m_CurrentAmmo;
     float m_LastTimeShot = Mathf.NegativeInfinity;
     public float LastChargeTriggerTimestamp { get; private set; }
     Vector3 m_LastMuzzlePosition;

@@ -48,9 +48,16 @@ public class Pickup : MonoBehaviour
 
         if (pickingPlayer != null)
         {
+            print(onPick != null);
+            WeaponController weapon_controller = FindObjectsOfType<WeaponController>()[0];
+
+            Health playerHealth = pickingPlayer.GetComponent<Health>();
+            playerHealth.Heal(100.0f);
+            weapon_controller.m_CurrentAmmo = weapon_controller.maxAmmo;
+            Destroy(this.gameObject);
             if (onPick != null)
             {
-                onPick.Invoke(pickingPlayer);
+                //onPick.Invoke(pickingPlayer);
             }
         }
     }

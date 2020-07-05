@@ -9167,7 +9167,7 @@ PrefabInstance:
     - target: {fileID: 3036999983946680318, guid: 5454e5020220b53438bab8e1997ee8d5,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3036999983946680318, guid: 5454e5020220b53438bab8e1997ee8d5,
         type: 3}
@@ -17890,7 +17890,7 @@ PrefabInstance:
     - target: {fileID: 5146640772727789686, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5146640772727789686, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
@@ -35435,7 +35435,7 @@ PrefabInstance:
     - target: {fileID: 5146640772727789686, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5146640772727789686, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
@@ -35480,7 +35480,7 @@ PrefabInstance:
     - target: {fileID: 5146640772727789687, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5146640772727789687, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
@@ -35689,7 +35689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1002448524
 Light:
   m_ObjectHideFlags: 0
@@ -35797,7 +35797,7 @@ Transform:
   - {fileID: 1600192484}
   - {fileID: 633916466}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1003345862 stripped
 GameObject:
@@ -38756,7 +38756,7 @@ PrefabInstance:
     - target: {fileID: 3036999983946680318, guid: 5454e5020220b53438bab8e1997ee8d5,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3036999983946680318, guid: 5454e5020220b53438bab8e1997ee8d5,
         type: 3}
@@ -39856,7 +39856,7 @@ PrefabInstance:
     - target: {fileID: 5146640772727789686, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5146640772727789686, guid: 3caeefc22d5f9804083c7710fc127ba6,
         type: 3}
@@ -44003,7 +44003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1237608225
 Light:
   m_ObjectHideFlags: 0
@@ -50744,7 +50744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1463935826
 Light:
   m_ObjectHideFlags: 0
@@ -54147,7 +54147,7 @@ Transform:
   m_LocalScale: {x: 1, y: 7, z: 7}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1573423901 stripped
 Transform:
@@ -58885,7 +58885,7 @@ PrefabInstance:
     - target: {fileID: 3036999983946680318, guid: 5454e5020220b53438bab8e1997ee8d5,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3036999983946680318, guid: 5454e5020220b53438bab8e1997ee8d5,
         type: 3}
@@ -60609,7 +60609,7 @@ PrefabInstance:
     - target: {fileID: 5715249847897426548, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5715249847897426548, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
@@ -60629,7 +60629,7 @@ PrefabInstance:
     - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
@@ -65169,7 +65169,7 @@ PrefabInstance:
     - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
@@ -66054,7 +66054,7 @@ PrefabInstance:
     - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}
       propertyPath: damage_distance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5715249847897426549, guid: fd0bbf7ef6abc7f4d8097a20c3a00c8f,
         type: 3}

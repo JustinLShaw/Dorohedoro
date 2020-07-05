@@ -20,11 +20,13 @@ public class HudLogic : MonoBehaviour
     float arm_angle = 0.0f;
 
     public GameObject smoke = null;
+    WeaponController weapon_controller = null;
 
     // Start is called before the first frame update
     void Start()
     {
         arm_rt = arm.GetComponent<RectTransform>();
+        weapon_controller = FindObjectsOfType<WeaponController>()[0];
     }
 
     // Update is called once per frame
@@ -54,7 +56,7 @@ public class HudLogic : MonoBehaviour
             enAvatar.sprite = neutralEnAvatar;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && weapon_controller.m_CurrentAmmo > 0)
         {
             enAvatar.sprite = screamEnAvatar;
 

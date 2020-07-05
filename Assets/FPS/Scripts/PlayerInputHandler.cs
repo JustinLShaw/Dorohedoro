@@ -60,15 +60,17 @@ public class PlayerInputHandler : MonoBehaviour
 
     public float GetLookInputsVertical()
     {
-        return GetMouseOrStickLookAxis(GameConstants.k_MouseAxisNameVertical, GameConstants.k_AxisNameJoystickLookVertical);
+        return 0.0f;// GetMouseOrStickLookAxis(GameConstants.k_MouseAxisNameVertical, GameConstants.k_AxisNameJoystickLookVertical);
     }
 
     public bool GetJumpInputDown()
     {
+        /*
         if (CanProcessInput())
         {
             return Input.GetButtonDown(GameConstants.k_ButtonNameJump);
         }
+        */
 
         return false;
     }
