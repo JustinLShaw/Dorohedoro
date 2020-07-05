@@ -21,8 +21,6 @@ public class HudLogic : MonoBehaviour
 
     public GameObject smoke = null;
 
-    
-
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +62,7 @@ public class HudLogic : MonoBehaviour
             GameObject smoke_go = Instantiate(smoke);
             smoke_go.transform.parent = this.transform;
             smoke_go.GetComponent<RectTransform>().localPosition = new Vector3(0.0f, 0.0f, 0.0f);
-            smoke_go.transform.localScale = new Vector3(1480.0f, 700.0f, 1.0f);
+            smoke_go.transform.localScale = new Vector3(1480.0f, 920.0f, 1.0f);
             //UnityEngine.Debug.Break();
 
             EnemyScript[] enemies = FindObjectsOfType<EnemyScript>(); // Change here
@@ -72,7 +70,7 @@ public class HudLogic : MonoBehaviour
             foreach(EnemyScript e in enemies)
             {
                 GameObject eo = e.gameObject;
-                if (Vector3.Distance(eo.transform.position, e.target.transform.position) < e.damage_distance)
+                if (Vector3.Distance(eo.transform.position, e.target.transform.position) < e.damage_distance * 2.0f)
                 {
                     //spawn mushrooms
                     GameObject mushroom_death = Instantiate(e.mushroom_death);

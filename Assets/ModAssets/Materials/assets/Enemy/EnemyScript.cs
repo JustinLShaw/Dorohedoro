@@ -7,7 +7,7 @@ public class EnemyScript : MonoBehaviour
 {
     public float move_speed = 2.0f;
     public float animation_diff = 0.5f;
-    public float damage_distance = 1.5f;
+    public float damage_distance = 1.0f;
     public Sprite image1 = null;
     public Sprite image2 = null;
     public GameObject target = null;
@@ -49,13 +49,16 @@ public class EnemyScript : MonoBehaviour
         }
 
         //don't change y
-        float save_y = this.transform.position.y;
-        this.transform.position = Vector3.MoveTowards(transform.position, target.transform.position, move_speed * Time.deltaTime);
-        this.transform.position = new Vector3(this.transform.position.x, save_y, this.transform.position.z);
+        if (Vector3.Distance(this.transform.position, target.transform.position) < 25.0f)
+        {
+            float save_y = this.transform.position.y;
+            this.transform.position = Vector3.MoveTowards(transform.position, target.transform.position, move_speed * Time.deltaTime);
+            this.transform.position = new Vector3(this.transform.position.x, save_y, this.transform.position.z);
 
-        this.transform.LookAt(target.transform);
+            this.transform.LookAt(target.transform);
+        }
 
-        if(Vector3.Distance(this.transform.position, target.transform.position) < damage_distance) {
+        if (Vector3.Distance(this.transform.position, target.transform.position) < damage_distance) {
             m_PlayerHealth.currentHealth -= 1;
         }
 
