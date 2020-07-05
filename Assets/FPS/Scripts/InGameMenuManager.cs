@@ -64,18 +64,18 @@ public class InGameMenuManager : MonoBehaviour
             Cursor.visible = true;
         }
 
-        if (Input.GetButtonDown(GameConstants.k_ButtonNamePauseMenu)
-            || (menuRoot.activeSelf && Input.GetButtonDown(GameConstants.k_ButtonNameCancel)))
-        {
-            if (controlImage.activeSelf)
-            {
-                controlImage.SetActive(false);
-                return;
-            }
+        // if (Input.GetButtonDown(GameConstants.k_ButtonNamePauseMenu)
+        //     || (menuRoot.activeSelf && Input.GetButtonDown(GameConstants.k_ButtonNameCancel)))
+        // {
+        //     if (controlImage.activeSelf)
+        //     {
+        //         controlImage.SetActive(false);
+        //         return;
+        //     }
 
-            SetPauseMenuActivation(!menuRoot.activeSelf);
+        //     SetPauseMenuActivation(!menuRoot.activeSelf);
 
-        }
+        // }
 
         if (Input.GetAxisRaw(GameConstants.k_AxisNameVertical) != 0)
         {

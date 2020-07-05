@@ -7,7 +7,7 @@ public class EnemyScript : MonoBehaviour
 {
     public float move_speed = 2.0f;
     public float animation_diff = 0.5f;
-    public float damage_distance = 1.0f;
+    public float damage_distance = 0.7f;
     public Sprite image1 = null;
     public Sprite image2 = null;
     public GameObject target = null;
@@ -59,7 +59,7 @@ public class EnemyScript : MonoBehaviour
         }
 
         if (Vector3.Distance(this.transform.position, target.transform.position) < damage_distance) {
-            m_PlayerHealth.currentHealth -= 1;
+            m_PlayerHealth.currentHealth -= 0.5f;
         }
 
         if(m_PlayerHealth.currentHealth <= 0){
