@@ -14,6 +14,7 @@ public class EndScene : MonoBehaviour
     {
         videoPlane = video_player.GetComponent<VideoPlayer>();
         videoPlane.Prepare();
+        videoPlane.loopPointReached += EndReached;
     }
 
     // Update is called once per frame
@@ -26,5 +27,10 @@ public class EndScene : MonoBehaviour
     {
         videoPlane.Play();
         //Destroy(this.gameObject);
+    }
+
+    void EndReached(UnityEngine.Video.VideoPlayer vp)
+    {
+        SceneManager.LoadScene("WinScene");
     }
 }
