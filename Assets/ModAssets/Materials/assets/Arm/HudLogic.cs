@@ -15,8 +15,8 @@ public class HudLogic : MonoBehaviour
 
     RectTransform arm_rt;
 
-    public float arm_rotate_speed = 1.0f;
-    public float arm_rotate_radius = 10.0f;
+    float arm_rotate_speed = 10.0f;
+    float arm_rotate_radius = 0.2f;
     float arm_angle = 0.0f;
 
     public GameObject smoke = null;
@@ -26,12 +26,12 @@ public class HudLogic : MonoBehaviour
     void Start()
     {
         arm_rt = arm.GetComponent<RectTransform>();
-        weapon_controller = FindObjectsOfType<WeaponController>()[0];
     }
 
     // Update is called once per frame
     void Update()
     {
+        weapon_controller = FindObjectsOfType<WeaponController>()[0];
         if (Input.GetKey(KeyCode.W) ||
             Input.GetKey(KeyCode.A) ||
             Input.GetKey(KeyCode.D) ||
