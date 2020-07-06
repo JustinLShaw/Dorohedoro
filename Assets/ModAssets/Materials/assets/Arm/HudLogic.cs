@@ -15,8 +15,8 @@ public class HudLogic : MonoBehaviour
 
     RectTransform arm_rt;
 
-    float arm_rotate_speed = 10.0f;
-    float arm_rotate_radius = 0.2f;
+    float arm_rotate_speed = 5.0f;
+    float arm_rotate_radius = 1f;
     float arm_angle = 0.0f;
 
     public GameObject smoke = null;
