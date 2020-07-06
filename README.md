@@ -12,5 +12,5 @@ This unofficial fan game project is not endorsed in anyway by Netflix or Studio 
 
 Please don't sue us
 
-Our twitter handles are [https://twitter.com/Justin_L_Shaw](https://twitter.com/Justin_L_Shaw) and [@makneee](https://twitter.com/makneee)
+Our twitter handles are [@Justin_L_Shaw](https://twitter.com/Justin_L_Shaw) and [@makneee](https://twitter.com/makneee)
 
