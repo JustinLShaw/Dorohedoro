@@ -3,13 +3,14 @@ This is the source code to the doom-like game shown in the episode 5 credits of 
 
 The game is built on top of Unity's FPS MyFirstGame tutorial.
 
-Play the game on web: [http://dorohedoro.dev/]()
-Download the releases here: [https://github.com/JustinLShaw/Dorohedoro/releases/tag/Final]()
+Play the game on web: [here](http://dorohedoro.dev/)
+
+Download the releases: [here](https://github.com/JustinLShaw/Dorohedoro/releases/tag/Final)
 
 ## Disclaimer
 This unofficial fan game project is not endorsed in anyway by Netflix or Studio Mappa. We just really liked the show. 
 
 Please don't sue us
 
-Our twitter handles are [https://twitter.com/Justin_L_Shaw](@Justin_L_Shaw) and [https://twitter.com/makneee](@makneee)
+Our twitter handles are [https://twitter.com/Justin_L_Shaw](https://twitter.com/Justin_L_Shaw) and [@makneee](https://twitter.com/makneee)
 
