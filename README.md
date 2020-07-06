@@ -1,4 +1,4 @@
-#dohedoro fan game 
+# Dodohedoro fan game 
 This is the source code to the doom-like game shown in the episode 5 credits of Dorohedoro.
 
 The game is built on top of Unity's FPS MyFirstGame tutorial.
